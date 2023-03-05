@@ -12,36 +12,22 @@ import Slide5 from './slides/Slide5';
 import Slide6 from './slides/Slide6';
 import Slide7 from './slides/Slide7';
 
-// const slides = [
-//   {url: "./images/compass-2.png", title: "image1"},
-//   {url: "./images/gg-bridge.png", title: "image3"},
-//   {url: "./images/sh-1-blank.png", title: "image3"},
-//   {url: "http://localhost:3000/image4", title: "image4"},
- 
-// ];
-
-
-
 
 const slides = [
   {
     component: Slide1
-    
   },
   {
-    component: Slide2
-    
+    component: Slide2 
   },
   {
     component: Slide3
-    
   },
   {
     component: Slide4
   },
   {
     component: Slide5
-    
   },
   {
     component: Slide6
@@ -67,15 +53,11 @@ const slidesWithUrls = slides.map((slide, index) => ({
   ...backgroundImages[index]
 }));
 
-console.log("SWURL:", slidesWithUrls);
-
-
 const App = () => {
   return(
     <div className={'main-container'}>
     { <Navigation/> }
-    <ImageSlider slides={slidesWithUrls}/>
-    
+    <ImageSlider slides={slidesWithUrls} interval={10000}/>
     </div>
   )
 }

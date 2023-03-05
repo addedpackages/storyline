@@ -123,7 +123,6 @@ const SlideWithBackgroundImage = ({ imageUrl }) => {
     return (
     <div style={slideWrapperStyle}>
       <div style={slideStyle}>
-       
             <div style={imageWrapper}>
                 <img style={imageStyle}src={testPic}/>
                 <div style={overlayStyle}>

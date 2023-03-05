@@ -1,6 +1,5 @@
 import React from "react";
 import {useEffect, useState} from "react";
-import AnimatedPieGraph from "../AnimatedPieGraph";
 import { motion } from 'framer-motion';
 import LineGraph from '../LineGraph';
 

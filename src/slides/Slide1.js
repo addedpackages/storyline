@@ -1,6 +1,5 @@
 import React from "react";
 import {useEffect, useState} from "react";
-import AnimatedGraph from "../AnimatedPieGraph";
 import { motion } from 'framer-motion';
 import AnimatedBarGraph from "../BarGraph";
 

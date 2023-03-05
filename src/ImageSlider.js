@@ -8,12 +8,12 @@ const ImageSlider = ({slides, interval = 8000}) => {
     
     const [currentIndex, setCurrentIndex] = useState(0);
     
-     useEffect(() => {
-    const interval = setInterval(() => {
+    useEffect(() => {
+    const autoSlide = setInterval(() => {
       goToNext();
-    }, 1000000);
-    return () => clearInterval(interval);
-  }, [currentIndex]);
+    }, interval);
+    return () => clearInterval(autoSlide);
+  }, [currentIndex, interval]);
 
     const goToNext = () => {
         const newIndex = (currentIndex + 1) % slides.length
